@@ -6,7 +6,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || 3000;
 
-console.log(__dirname);
+console.log(__dirname);//
 
 app.get('/', (req,res) => {
     res.sendFile('index.html', {root: __dirname});
